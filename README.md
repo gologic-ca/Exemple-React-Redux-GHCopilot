@@ -1,66 +1,42 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a85b9a22-32b1-479a-a00a-26277493613b/deploy-status)](https://app.netlify.com/sites/react-ts-redux-realworld-example-app/deploys)
-![Pipeline](https://github.com/angelguzmaning/ts-redux-react-realworld-example-app/actions/workflows/pipeline.yml/badge.svg)
+# ![Formation GoLogic Example de Projet](Gologic.png)
 
-> ### React codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
+## Pré-requis pour l'exemple de projet 
 
-### [Demo](https://react-ts-redux-realworld-example-app.netlify.app/)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+Nous sommes ravis d'explorer GitHub Copilot avec vous à travers des exemples pratiques. Pour assurer un bon déroulement, veuillez préparer votre poste de travail de la manière suivante :
 
-This codebase was created to demonstrate a fully fledged fullstack application built with React, Typescript, and Redux Toolkit including CRUD operations, authentication, routing, pagination, and more.
+- Installer Visual Studio Code : [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
-For more information on how this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+- Une fois que Visual Studio Code est installé sur votre système, installez le plugin SonarLint (Ouvrez VSCode, appuyez sur Ctrl+Shift+X, saisissez "SonarLint" dans la barre de recherche, puis cliquez sur "Install").
 
+- Installer la version plus récente de NodeJS et NPM : [https://nodejs.org/en/download/prebuilt-installer](https://nodejs.org/en/download/prebuilt-installer) (On recommande l'installeur automatique pour faciliter le tout).
 
-# How it works
-The root of the application is the `src/components/App` component. The App component uses react-router's HashRouter to display the different pages. Each page is represented by a [function component](https://reactjs.org/docs/components-and-props.html). 
+- (OPTIONNEL) Installer Postman pour faciliter les requêtes au backend : [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
-Some components include a `.slice` file that contains the definition of its state and reducers, which might also be used by other components. These slice files follow the [Redux Toolkit](https://redux-toolkit.js.org/) guidelines. Components connect to the state by using [custom hooks](https://reactjs.org/docs/hooks-custom.html#using-a-custom-hook).
+## Démarrer l'application
 
-This application is built following (as much as practicable) functional programming principles:
-* Immutable Data
-* No classes
-* No let or var
-* Use of monads (Option, Result)
-* No side effects
+- Ouvrez VSCode et ouvrez une nouvelle fenêtre (Ctrl+Shift+N).
 
-The code avoids runtime type-related errors by using Typescript and decoders for data coming from the API.
+- Sur la page d'accueil, cliquez sur "Clone Git Repository...", entrez l'URL de ce dépôt [https://github.com/gologic-ca/Exemple-React-Redux-GHCopilot.git](https://github.com/gologic-ca/Exemple-React-Redux-GHCopilot.git) et confirmez en cliquant sur "Clone from the URL". Cliquez ensuite sur "Open".
 
-Some components include a `.test` file that contains unit tests. This project enforces a 100% code coverage.
+- Une fois le projet ouvert, ouvrez un nouveau terminal (Shift+Ctrl+\`). Exécuter la commande :
+`npm install`
+Après que l'installation est complète, exécuter la commande :
+`npm start`
 
-This project uses prettier and eslint to enforce a consistent code syntax.
+Félicitations, le projet devrait maintenant être en cours d'exécution sur `http://localhost:3000/`.
 
-## Folder structure
-* `src/components` Contains all the functional components.
-* `src/components/Pages` Contains the components used by the router as pages.
-* `src/state` Contains redux related code.
-* `src/services` Contains the code that interacts with external systems (API requests).
-* `src/types` Contains type definitions alongside the code related to those types.
-* `src/config` Contains configuration files.
+## Structure de fichiers
+* `src/components` Contient tous les composants fonctionnels.
+* `src/components/Pages` Contient les composants utilisés par le routeur comme pages.
+* `src/state` Contient le code lié à Redux.
+* `src/services` Contient le code qui interagit avec les systèmes externes (requêtes API).
+* `src/types` Contient les définitions de types ainsi que le code lié à ces types.
+* `src/config` Contient les fichiers de configuration.
 
-# Getting started
+## [Source et documentation](https://github.com/gothinkster/realworld)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+La base de code contient des exemples concrets (CRUD, authentification, modèles avancés, etc.) qui respectent la spécification et l'API [RealWorld](https://github.com/gothinkster/realworld-example-apps).
 
-## Available Scripts
-In the project directory, you can run:
+Cette base de code a été créée pour montrer une application full-stack complète construite avec Java Spring (avec une orientation fonctionnalité) incluant des opérations CRUD, de l'authentification, du routage, de la pagination, et plus encore.
 
-### `npm start`
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-
-Note: This project will run the app even if linting fails.
-
-### `npm test`
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Pour plus d'informations sur le fonctionnement avec d'autres frontends/backends, rendez-vous sur le dépôt [RealWorld](https://github.com/gothinkster/realworld).
