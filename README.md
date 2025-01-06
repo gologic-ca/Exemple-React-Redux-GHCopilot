@@ -54,7 +54,7 @@ We couldn't be more excited to explore GitHub Copilot with you via practical exa
 
 - Once Visual Studio Code is installed on your system, install the SonarLint plugin (Open VSCode, click Ctrl+Shift+X, insert "SonarLint" in the search bar and click on "Install").
 
-- IInstall the most recent version of NodeJs and NPM : [https://nodejs.org/en/download/prebuilt-installer](https://nodejs.org/en/download/prebuilt-installer) (We recommend the auto-installer to facilitate the whole).
+- Install the most recent version of NodeJs and NPM : [https://nodejs.org/en/download/prebuilt-installer](https://nodejs.org/en/download/prebuilt-installer) (We recommend the auto-installer to facilitate the whole).
 
 - (OPTIONAL) Install Postman to facilitate testing API calls to the backend : [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
